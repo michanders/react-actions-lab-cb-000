@@ -42,7 +42,7 @@ export default class Spreadsheet extends React.Component {
 
         <Table
           table={this.state.table}
-          onChange={this.handleChange}
+          onChange={actions.changeCell.bind(this)}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur} />
 
