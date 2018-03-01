@@ -124,7 +124,7 @@ describe('<Spreadsheet />', function () {
   it('should display focused cell in format rowIndex — columnIndex if cell is focused', function () {
     const wrapper = shallow(<Spreadsheet />);
     wrapper.setState({ focused: [1, 2] });
-    expect(wrapper.find('.spreadsheet__focused').text()).toBe('1 — 2' || '1 - 2');
+    expect(wrapper.find('.spreadsheet__focused').text()).toBe('1 - 2' || '1 - 2');
   });
 
   it('should not display focused cell if no cell is focused', function () {
