@@ -24,23 +24,23 @@ export default class Spreadsheet extends React.Component {
 
   }
 
-  
+
   render () {
     return (
       <div className='spreadsheet'>
         <h1>My little spreadsheet</h1>
 
         <div className='spreadsheet__buttons'>
-          <button onClick={this.handleAddColumn}>Add Column</button>
+          <button onClick={actions.addColumn.bind(this)}>Add Column</button>
           {' '}
-          <button onClick={this.handleAddRow}>Add Row</button>
+          <button onClick={actions.addRow.bind(this)}>Add Row</button>
           {' '}
-          <button onClick={this.handleRemoveColumn}>Remove Column</button>
+          <button onClick={actions.removeColumn.bind(this)}>Remove Column</button>
           {' '}
           <button onClick={this.handleRemoveRow}>Remove Row</button>
         </div>
 
-        <Table 
+        <Table
           table={this.state.table}
           onChange={this.handleChange}
           onFocus={this.handleFocus}
