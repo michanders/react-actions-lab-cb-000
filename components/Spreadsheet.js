@@ -43,7 +43,7 @@ export default class Spreadsheet extends React.Component {
         <Table
           table={this.state.table}
           onChange={actions.changeCell.bind(this)}
-          onFocus={this.handleFocus}
+          onFocus={actions.focusCell.bind(this)}
           onBlur={this.handleBlur} />
 
         <div className='spreadsheet__focused'>
