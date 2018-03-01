@@ -13,7 +13,6 @@ export default class Spreadsheet extends React.Component {
         ['']
       ]
     };
-
     this.handleAddColumn    =   actions.addColumn.bind(this);
     this.handleAddRow       =   actions.addRow.bind(this);
     this.handleRemoveColumn =   actions.removeColumn.bind(this);
@@ -21,7 +20,6 @@ export default class Spreadsheet extends React.Component {
     this.handleChange       =   actions.changeCell.bind(this);
     this.handleFocus        =   actions.focusCell.bind(this);
     this.handleBlur         =   actions.blurCell.bind(this);
-
   }
 
 
