@@ -37,7 +37,7 @@ export default class Spreadsheet extends React.Component {
           {' '}
           <button onClick={actions.removeColumn.bind(this)}>Remove Column</button>
           {' '}
-          <button onClick={this.handleRemoveRow}>Remove Row</button>
+          <button onClick={actions.removeRow.bind(this)}>Remove Row</button>
         </div>
 
         <Table
