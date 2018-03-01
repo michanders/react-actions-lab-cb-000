@@ -19,7 +19,6 @@ export default class Spreadsheet extends React.Component {
     return (
       <div className='spreadsheet'>
         <h1>My little spreadsheet</h1>
-
         <div className='spreadsheet__buttons'>
           <button onClick={actions.addColumn.bind(this)}>Add Column</button>
           {' '}
