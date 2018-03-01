@@ -6,7 +6,7 @@ export default class Cell extends React.Component {
   render () {
     return (
       <td className="cell">
-
+        <input />
       </td>
     )
   }
