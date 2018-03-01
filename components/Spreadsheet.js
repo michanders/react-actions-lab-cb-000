@@ -44,7 +44,7 @@ export default class Spreadsheet extends React.Component {
           table={this.state.table}
           onChange={actions.changeCell.bind(this)}
           onFocus={actions.focusCell.bind(this)}
-          onBlur={this.handleBlur} />
+          onBlur={actions.blurCell.bind(this)} />
 
         <div className='spreadsheet__focused'>
           {this.state.focused && this.state.focused.join(' - ')}
