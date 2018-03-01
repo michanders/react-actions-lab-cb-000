@@ -7,7 +7,10 @@ import Table from './Table';
 export default class Spreadsheet extends React.Component {
   constructor (props) {
     super(props);
-    this.state = {};
+    this.state = {
+      focused: null,
+      table: [[""]]
+    };
   }
 
   render () {
