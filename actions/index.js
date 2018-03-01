@@ -2,7 +2,7 @@
 
 function addColumn (ev) {
   ev.preventDefault();
-  
+
   this.setState({
     table: this.state.table.map(row => [...row, ''])
   })
@@ -21,7 +21,7 @@ function addRow (ev) {
 function changeCell (rowIndex, columnIndex, ev) {
   const updatedTable = this.state.table;
   updatedTable[rowIndex][columnIndex] = ev.target.value;
-  
+
   this.setState({
     table: updatedTable
   })
